@@ -87,6 +87,17 @@
       "detalles": "Piola. 8k",
       "foto": "imgs/drone-dji.webp",
       "envio": true
+    },
+    {
+      "id": "ddec",
+      "nombre": "televisor 45",
+      "precio": "1200",
+      "stock": "4",
+      "marca": "lg",
+      "categoria": "Tecnología",
+      "detalles": "televisor 4k",
+      "foto": "imgs/apple-iphone-12.webp",
+      "envio": true
     }
   ],
   "carrito": [

@@ -9,9 +9,9 @@ const TablaFila = ({producto}) => {
     <td>{producto.categoria}</td>
     <td>{producto.detalles}</td>
     <td>
-        <img src={producto.foto} alt={producto.nombre} style={{ width: '40px'}} />
+        <img src={producto.foto } alt={producto.nombre} style={{ width: '40px'}} />
     </td>
-    <td>{producto.envio}</td>
+    <td>{producto.envio? 'si' : 'no'}</td>
     <td>
         <button>Ver</button>
         <button>Editar</button>
