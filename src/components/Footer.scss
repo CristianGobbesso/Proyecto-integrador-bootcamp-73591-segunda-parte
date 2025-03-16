@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #061523;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+
+    &__left {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__right a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: transform 0.5s ease; 
+    }
+    
+}
+@media screen and (min-width: 992px){
+    .footer__social-icons a {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    
+    .footer__social-icons a:hover {
+        transform: scale(1.3);
+    }
+}

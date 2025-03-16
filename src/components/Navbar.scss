@@ -1,0 +1,52 @@
+/* ----------------------------------------------- */
+/* NAVBAR                                          */
+/* ----------------------------------------------- */
+
+.nav-bar {
+    background-color: #061523;
+    display: none;
+    border-bottom: 1px solid white;
+    padding: 7px;
+
+    &__nav-list {
+        /* .nav-bar__nav-list */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+
+
+        @media screen and (min-width: 992px) {
+            & {
+                flex-direction: row;
+            }
+        }
+    }
+
+    &__nav-item {
+        /* .nav-bar__nav-item */
+        text-align: center;
+
+
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: #267b84;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+        border: 1px solid #061523;
+        transition: transform 0.3s ease, border 0.3s ease;
+    }
+
+    &__nav-link:hover {
+        transform: scale(1.1);
+    }
+
+    @media screen and (min-width: 992px) {
+        & {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.section-cards {
+    background-color: #80c8e1;
+    padding: 1rem;
+    border-bottom: 2px solid white;
+    
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #3fbde7;
+}
