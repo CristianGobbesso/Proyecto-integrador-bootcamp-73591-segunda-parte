@@ -5,29 +5,28 @@
 .main-header {
     display: flex;
     flex-direction: column-reverse;
-
+    align-items: center;
+    width: 100%;
+    background-color: #061523;
+    
     @media screen and (min-width: 992px) {
-        & {
-            flex-direction: column;
-        }
+        flex-direction: column;
     }
 }
 
 #menu {
     display: none;
-
-    /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
-
+    
+    
     &:checked+.nav-bar {
         display: block;
     }
-
+    
     &:checked~.search-bar .menu-toogle .menu-toogle__label {
         background-color: #267b84;
+        
     }
 }
-
-
 
 
 /* ----------------------------------------------- */
@@ -36,53 +35,31 @@
 
 .menu-toogle {
     display: block;
-    flex: 0 0 3rem;
     position: relative;
     cursor: pointer;
-    /* manito */
+    margin-top: 10px;
+    
 
     &__label {
-        /* .menu-toogle__label */
         display: block;
         background-color: #061523;
-        height: 100%;
+        padding: 10px;
+        margin: 20px;
         cursor: pointer;
+        
     }
 
     &__top-bread,
-    /* .menu-toogle__top-bread */
     &__meat,
-    /* .menu-toogle__top-bread */
     &__bottom-bread {
-        /* .menu-toogle__top-bread */
-        displaY: block;
+        display: block;
         background-color: whitesmoke;
-        height: .2rem;
-        position: absolute;
-        left: .5rem;
-        right: .5rem;
-    }
-
-    &__top-bread {
-        top: .8rem;
-    }
-
-    &__meat {
-        /* Centrar sin usar flexbox */
-        top: 50%;
-        /* centrando verticalmente */
-        margin-top: -.1rem;
-    }
-
-    &__bottom-bread {
-        bottom: .8rem;
+        height: 2px;
+        width: 25px;
+        margin: 5px auto;
     }
 
     @media screen and (min-width: 992px) {
-        & {
-            /* .menu-toogle */
-            display: none;
-        }
+        display: none;
     }
-
 }
