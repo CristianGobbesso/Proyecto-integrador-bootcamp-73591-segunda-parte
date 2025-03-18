@@ -9,9 +9,11 @@
     bottom: 0;
     width: auto;
 
+
     &__left {
         font-size: 20px;
         font-weight: 500;
+        margin-right: 15px;
     }
 
     &__right a {
@@ -19,7 +21,8 @@
         color: white;
         text-decoration: none;
         font-weight: 500;
-        transition: transform 0.5s ease; 
+        transition: transform 0.5s ease;
+        margin-left: 35px; 
     }
     
 }
