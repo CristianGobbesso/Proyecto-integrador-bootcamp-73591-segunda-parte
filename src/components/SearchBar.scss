@@ -31,6 +31,10 @@
         background-color: #061523; /* Fondo igual al buscar */
     }
 
+    &__form-label{
+        display: none;
+    }
+
     &__form-search {
         width: 35%; /* Input más chico */
         padding: 5px;
