@@ -31,7 +31,7 @@ const Nosotros = () => {
 
         <article>
           <p>
-            Creemos que la tecnología es más que un conjunto de dispositivos: es una herramienta que transforma vidas. 
+            Creemos que la tecnología es más que un conjunto de dispositivos, es una herramienta que transforma vidas. 
             Nos dedicamos a ofrecer lo mejor en innovación, calidad y servicio.
           </p>
           <p>
@@ -42,7 +42,7 @@ const Nosotros = () => {
             soporte técnico y opciones de financiamiento accesibles.
           </p>
           <p>
-            ¡Te esperamos para descubrir juntos la innovación y vivir la tecnología de una manera única en CODEX!
+            ¡Te esperamos para descubrir juntos la innovación y vivir la tecnología de una manera única en <strong>CODEX!</strong>
           </p>
         </article>
       </section>
