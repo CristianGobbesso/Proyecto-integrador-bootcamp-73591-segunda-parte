@@ -4,7 +4,7 @@ import './index.scss'
 import App from './App.jsx'
 import { ProductosProvider } from './contexts/ProductosContext.jsx'
 import { CarritoProvider } from './contexts/CarritoContext.jsx'
-import { FormularioProvider } from './hooks/FormularioContext.jsx'
+import { FormularioProvider } from './contexts/FormularioContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
