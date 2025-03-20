@@ -16,7 +16,7 @@ const Nosotros = () => {
         <article>
           <h2>Pasión por la Tecnología y la Innovación.</h2>
           <p>
-            En <strong>CODEX</strong>, somos apasionados por la tecnología y su impacto en la vida cotidiana.
+            En <span className="brackets">{"{"}</span> <strong>CODEX</strong> <span className="brackets"> {"}"} </span>, somos apasionados por la tecnología y su impacto en la vida cotidiana.
             Ubicados en la ciudad de Rosario, ofrecemos una amplia gama de productos tecnológicos de última generación.
           </p>
         </article>
@@ -38,11 +38,11 @@ const Nosotros = () => {
             Contamos con un espacio moderno donde puedes probar productos antes de comprarlos y recibir asesoramiento personalizado.
           </p>
           <p>
-            Además, en <strong>CODEX</strong> nos preocupamos por la satisfacción de nuestros clientes con garantías extendidas,
+            Además, en <span className="brackets">{"{"}</span> <strong>CODEX</strong> <span className="brackets"> {"}"} </span> nos preocupamos por la satisfacción de nuestros clientes con garantías extendidas,
             soporte técnico y opciones de financiamiento accesibles.
           </p>
           <p>
-            ¡Te esperamos para descubrir juntos la innovación y vivir la tecnología de una manera única en <strong>CODEX!</strong>
+            ¡Te esperamos para descubrir juntos la innovación y vivir la tecnología de una manera única en <span className="brackets">{"{"}</span> <strong>CODEX</strong> <span className="brackets"> {"}"} </span>
           </p>
         </article>
       </section>
