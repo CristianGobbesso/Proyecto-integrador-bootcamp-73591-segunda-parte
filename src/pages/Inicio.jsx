@@ -14,7 +14,7 @@ const Inicio = () => {
       <main>
         <section className="section-cards">
           <header className="section-cards__header">
-            <h1>Encotra los mejores productos en CODEX.</h1>
+            <h1>Encotra los mejores productos en <span className="brackets">{"{"}</span> CODEX <span className="brackets"> {"}"} </span></h1>
             <p>Se encontraron X productos</p>
           </header>
         </section>
