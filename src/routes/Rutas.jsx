@@ -5,6 +5,10 @@ import Nosotros from "../pages/Nosotros"
 import Contacto from "../pages/Contacto"
 import Carrito from "../pages/Carrito"
 import NoEncontrado from "../pages/NoEncontrado"
+import ProductoDetalle from "../pages/ProductoDetalle"
+
+
+
 
 const Rutas = () => {
     const hookRutas = useRoutes(
@@ -16,6 +20,9 @@ const Rutas = () => {
             {
                 path: '/alta',
                 element: <Alta/>
+            },
+            {   path: '/alta/detalle/:id',
+                element: <ProductoDetalle /> 
             },
             {
                 path: '/nosotros',
