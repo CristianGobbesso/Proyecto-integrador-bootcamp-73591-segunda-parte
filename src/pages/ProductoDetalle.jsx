@@ -1,3 +1,4 @@
+import './ProductoDetalle.scss'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import Spinner from '../components/Spinner'
@@ -38,20 +39,25 @@ const ProductoDetalle = () => {
 
   return (
     <>
-      <h1>Producto detalle</h1>
+    <section className="section-detalle">
+        <header className="section-detalle__header">
+          <h1>Producto detalle</h1>
+          
+        </header>
+      </section>
 
       {
         productoDetalle ? 
           (
 
-            <>
-              <h2>El nombre del producto: {productoDetalle.nombre}</h2>
+            <section className='section-detalle__producto-Detalle'>
+              <h2> {productoDetalle.nombre}</h2>
               <img src={`/${productoDetalle.foto}`} alt={productoDetalle.nombre} />
               <p>Marca: {productoDetalle.marca}</p>
-              <p>La categoría del producto es: {productoDetalle.categoria}</p>
+              <p>Categoria: {productoDetalle.categoria}</p>
               <p>Detalles: {productoDetalle.detalles}</p>
-              <p>El precio: {productoDetalle.precio}</p>
-            </>  
+              <p><strong>A tan solo: $</strong> {productoDetalle.precio}</p>
+            </section>  
             
           ) :
           (
