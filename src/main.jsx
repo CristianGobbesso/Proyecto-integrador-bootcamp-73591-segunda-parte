@@ -6,20 +6,23 @@ import { ProductosProvider } from './contexts/ProductosContext.jsx'
 import { CarritoProvider } from './contexts/CarritoContext.jsx'
 import { FormularioProvider } from './contexts/FormularioContext.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CarritoProvider>
+      
+        <ProductosProvider>
 
-      <ProductosProvider>
+          <FormularioProvider>
 
-        <FormularioProvider>
-    
-          <App />
-    
-        </FormularioProvider>
-    
-      </ProductosProvider>
+            <App />
 
+          </FormularioProvider>
+
+
+
+        </ProductosProvider>
+     
     </CarritoProvider>
   </StrictMode>,
 )
