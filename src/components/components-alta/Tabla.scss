@@ -1,12 +1,140 @@
-table.tabla-alta {
-    border: 1px solid black;
+// **Tabla de Productos**
+.tabla-alta {
+    width: 100%;
     border-collapse: collapse;
-    width: 95%;
-    margin: 1rem auto;
-
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
+    margin-top: 20px;
+  
+    thead {
+      background: #007bff;
+      color: white;
+  
+      tr {
+        th {
+          padding: 15px;
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
     }
-}
+  
+    tbody {
+      tr {
+        transition: 0.3s;
+  
+        &:hover {
+          background: #f1f1f1;
+        }
+  
+        td {
+          padding: 12px;
+          text-align: center;
+          border-bottom: 1px solid #ddd;
+  
+          img {
+            width: 40px;
+            height: auto;
+            border-radius: 5px;
+          }
+  
+          button {
+            padding: 6px 10px;
+            margin: 2px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+  
+            &:nth-child(1) { background: #28a745; color: white; }
+            &:nth-child(2) { background: #ffc107; color: black; }
+            &:nth-child(3) { background: #dc3545; color: white; }
+  
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // **Estilos para pantallas más grandes (mínimo 992px)**
+  @media screen and (min-width: 992px) {
+    .tabla-alta {
+      thead {
+        tr {
+          th {
+            padding: 20px;
+            font-size: 1.1rem;
+          }
+        }
+      }
+  
+      tbody {
+        tr {
+          td {
+            padding: 15px;
+            font-size: 1rem;
+  
+            img {
+              width: 60px;
+              height: auto;
+            }
+  
+            button {
+              padding: 8px 12px;
+              font-size: 1rem;
+              margin: 10px 0;
+              margin-right: 5px;
+  
+              &:nth-child(1) { background: #28a745; color: white; }
+              &:nth-child(2) { background: #ffc107; color: black; }
+              &:nth-child(3) { background: #dc3545; color: white; }
+            }
+          }
+        }
+  
+        tr:hover {
+          background: #f1f1f1;
+        }
+      }
+    }
+  }
+  
+  // **Estilos para dispositivos móviles (hasta 768px)**
+  @media (max-width: 768px) {
+    .tabla-alta {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .tabla-alta thead {
+      tr {
+        th {
+          padding: 10px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  
+    .tabla-alta tbody {
+      tr {
+        td {
+          padding: 8px;
+          font-size: 0.85rem;
+  
+          img {
+            width: 35px;
+          }
+  
+          button {
+            padding: 6px 10px;
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+  
