@@ -2,6 +2,7 @@ import './ProductoDetalle.scss'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import Spinner from '../components/Spinner'
+import convertirAPesos from "../utils/convertirAPesos"
 
 const ProductoDetalle = () => {
   const { id } = useParams()
@@ -56,7 +57,8 @@ const ProductoDetalle = () => {
               <p>Marca: {productoDetalle.marca}</p>
               <p>Categoria: {productoDetalle.categoria}</p>
               <p>Detalles: {productoDetalle.detalles}</p>
-              <p><strong>A tan solo: $</strong> {productoDetalle.precio}</p>
+              {/* convertir a pesos */}
+              <p><strong>A tan solo:</strong> {convertirAPesos(productoDetalle.precio)}</p>
             </section>  
             
           ) :
