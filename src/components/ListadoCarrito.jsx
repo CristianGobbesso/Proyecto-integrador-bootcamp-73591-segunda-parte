@@ -1,5 +1,5 @@
 import { useContext } from "react"
-
+import convertirAPesos from "../utils/convertirAPesos"
 import ItemCarrito from "./ItemCarrito"
 import './ListadoCarrito.scss'
 import CarritoContext from "../contexts/CarritoContext"
@@ -7,18 +7,23 @@ import CarritoContext from "../contexts/CarritoContext"
 const ListadoCarrito = () => {
     
 
-    const { carrito, calcularTotal,calcularTotalItems } = useContext(CarritoContext)
+    const { carrito,
+         calcularTotal,
+         calcularTotalItems,
+         limpiarCarritoContext,
+         guardarCarritoBackendContext
+         } = useContext(CarritoContext)
     
     console.log(carrito)
 
     const handleComprar = () => {
         console.log('Comprando...')
-        //guardarCarritoContext()
+        guardarCarritoBackendContext()
     }
     
     const handleLimpiarCarrito = () => {
         console.log('Vaciando carrito...')
-        //limpiarCarritoContext()
+        limpiarCarritoContext()
     }
 
   return (
@@ -55,7 +60,8 @@ const ListadoCarrito = () => {
                   
                       {/* Total alineado debajo de Acciones */}
                       <td colSpan={1} className="total-label">Total:</td>
-                      <td className="total-valor">${calcularTotal().toFixed(2)}</td>
+                      {/* convertir a pesos */}
+                      <td className="total-valor">{convertirAPesos(calcularTotal().toFixed(2))}</td>
                     </tr>
                   </tfoot>
                   
