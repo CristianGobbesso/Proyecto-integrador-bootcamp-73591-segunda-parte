@@ -15,7 +15,8 @@
     &__logo-container {
         font-size: 40px;
         font-weight: bold;
-        width: 15%;
+        width: 55%;
+        margin-bottom: 5px;
         text-align: center;
         
     }
@@ -28,7 +29,7 @@
         flex-direction: column;
         align-items: center;
         width: 90%;
-        background-color: #061523; /* Fondo igual al buscar */
+        background-color: #061523; 
     }
 
     &__form-label{
@@ -36,7 +37,7 @@
     }
 
     &__form-search {
-        width: 35%; /* Input más chico */
+        width: 35%; 
         padding: 5px;
     }
 
@@ -74,6 +75,15 @@
             border: 1px solid white;
             
         }
+
+        &__logo-container {
+            font-size: 35px;
+            font-weight: bold;
+            width: 15%;
+            text-align: center;
+            
+        }
+
         }
 
     @media screen and (min-width: 600px) {
