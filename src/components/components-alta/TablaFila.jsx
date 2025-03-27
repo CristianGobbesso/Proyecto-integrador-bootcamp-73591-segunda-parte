@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import ProductosContext from "../../contexts/ProductosContext"
 import {  useNavigate } from "react-router"
+import convertirAPesos from "../../utils/convertirAPesos"
 
 const TablaFila = ({producto}) => {
 
@@ -24,7 +25,8 @@ const handleVer = (id) => {
   return (
     <tr>
     <td>{producto.nombre}</td>
-    <td>{producto.precio}</td>
+    {/* convertir a pesos */}
+    <td>{convertirAPesos(producto.precio)}</td>
     <td>{producto.stock}</td>
     <td>{producto.marca}</td>
     <td>{producto.categoria}</td>
