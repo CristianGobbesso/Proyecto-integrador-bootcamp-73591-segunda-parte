@@ -9,7 +9,7 @@ const ProductoDetalle = () => {
   
   console.log(id)
 
-  const [productoDetalle, setProductoDetalle] = useState(null) // productoDetalle = {}
+  const [productoDetalle, setProductoDetalle] = useState(null) 
 
   useEffect(() => {
     
