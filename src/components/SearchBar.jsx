@@ -4,8 +4,8 @@ import './SearchBar.scss'
 const SearchBar = () => {
     return (
         <div className="search-bar">
-            <div className="search-bar__logo-container"><NavLink to="/"> 
-            <span className="brackets">{"{"}</span> CODEX <span className="brackets"> {"}"} </span> </NavLink></div>
+            <div className="search-bar__logo-container"><NavLink to="/">
+                <span className="brackets">{"{"}</span> CODEX <span className="brackets"> {"}"} </span> </NavLink></div>
 
             <form action="#" className="search-bar__form-container">
                 <label htmlFor="busqueda" className="search-bar__form-label">Buscar</label>

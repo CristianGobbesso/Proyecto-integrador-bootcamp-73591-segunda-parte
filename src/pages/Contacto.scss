@@ -17,20 +17,20 @@
   max-width: 450px;
   padding: 20px;
   margin-top: 15px;
-  background: #0d1b2a; /* Azul oscuro para el formulario */
+  background: #0d1b2a; 
   border-radius: 12px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-contact__form:hover {
-  transform: translateY(-3px); /* Hover effect para darle interactividad */
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+  transform: translateY(-3px); 
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .section-contact__form label {
   font-weight: 600;
-  color: #f5f5f5; /* Color blanco para los labels */
+  color: #f5f5f5; 
   margin-bottom: 8px;
 }
 
@@ -38,35 +38,35 @@
 .section-contact__form textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid #444; /* Borde gris oscuro */
+  border: 1px solid #444; 
   border-radius: 8px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  background-color: #3b4b5a; /* Fondo gris azulado para los campos */
-  color: #f5f5f5; /* Color de texto blanco */
+  background-color: #3b4b5a; 
+  color: #f5f5f5; 
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Cambia el fondo a blanco cuando el textarea tiene texto */
+
 .section-contact__form textarea:not(:placeholder-shown) {
-  background-color: #ffffff; /* Fondo blanco cuando el campo tiene texto */
+  background-color: #ffffff; 
   color: #161d24;
-  font-weight: 400; /* Color de texto oscuro para contraste */
+  font-weight: 400; 
 }
 
 .section-contact__form textarea::placeholder {
-  color: #bdc3c7; /* Color más claro para el placeholder */
+  color: #bdc3c7; 
 }
 
 .section-contact__form input::placeholder {
-  color: #bdc3c7; /* Color más claro para el placeholder en los inputs */
+  color: #bdc3c7; 
 }
 
 .section-contact__form input:focus,
 .section-contact__form textarea:focus {
-  border-color: #007bff; /* Color de borde azul al enfocar */
-  background-color: #34495e; /* Fondo ligeramente más claro al enfocar */
+  border-color: #007bff; 
+  background-color: #34495e; 
   outline: none;
   color: #f5f5f5;
 }
@@ -86,15 +86,15 @@
 
 .section-contact__form button:hover {
   background: #0056b3;
-  transform: translateY(-2px); /* Hover effect para el botón */
+  transform: translateY(-2px); 
 }
 
 .section-contact__form button:active {
-  transform: translateY(0px); /* Efecto de click */
+  transform: translateY(0px); 
 }
 
 small {
-  color: #e74c3c; /* Rojo más brillante para los errores */
+  color: #e74c3c; 
   font-size: 0.9rem;
   font-weight: bold;
 }
@@ -106,13 +106,13 @@ small {
   max-width: 600px;
   margin: 30px auto;
   border-radius: 12px;
-  overflow: hidden; /* Asegura que el contenido del iframe no sobresalga */
+  overflow: hidden; 
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-contact__iframe:hover {
-  transform: scale(1.05); /* Aumenta el tamaño del iframe ligeramente al pasar el mouse */
+  transform: scale(1.05); 
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -131,23 +131,23 @@ small {
 }
 
 .section-contact__iframe iframe {
-  width: 100%; /* Asegura que el iframe ocupe todo el contenedor */
-  height: 600px; /* Ajusta la altura del iframe */
+  width: 100%; 
+  height: 600px; 
   border: none;
   border-radius: 12px;
-  display: block; /* Asegura que el iframe se comporta como un bloque */
+  display: block; 
 }
 
 @media screen and (min-width: 992px) {
-  /* Evitar el scroll en todo el documento */
+  
   body {
-      overflow-x: hidden; /* Elimina el scroll horizontal */
+      overflow-x: hidden; 
   }
 
   .section-contact {
-      width: 100%; /* Asegura que la sección ocupe el 100% del ancho disponible */
+      width: 100%; 
       padding: 15px;
-      box-sizing: border-box; /* Incluye el padding y borde en el cálculo del ancho */
+      box-sizing: border-box; 
   }
 
   .section-contact__contacto {
@@ -167,7 +167,7 @@ small {
       flex-direction: column;
       gap: 20px;
       width: 100%;
-      max-width: 450px; /* Máximo de ancho para el formulario */
+      max-width: 450px; 
       padding: 20px;
       margin-top: 15px;
       background: #0d1b2a;
@@ -180,7 +180,7 @@ small {
       position: relative;
       text-align: center;
       width: 100%;
-      max-width: 500px; /* Limita el tamaño máximo del iframe */
+      max-width: 500px; 
       margin: 30px auto;
       margin-right: 45px;
       border-radius: 12px;
@@ -189,10 +189,10 @@ small {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /* Asegura que los elementos no se desborden ni cambien su tamaño */
+  
   .section-contact__form,
   .section-contact__iframe {
-      max-width: 500px; /* Mantén el tamaño máximo para el formulario */
-      width: 90%; /* Asegura que ocupe el 100% del espacio disponible, pero no más */
+      max-width: 500px; 
+      width: 90%; 
   }
 }

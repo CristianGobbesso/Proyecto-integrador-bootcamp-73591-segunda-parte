@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const useLocalStorage = ( clave, valorInicial = []) => {
+export const useLocalStorage = (clave, valorInicial = []) => {
 
     const getValorAlmacenado = () => {
 
@@ -49,7 +49,7 @@ export const useLocalStorage = ( clave, valorInicial = []) => {
         setValorAlmacenado(valorInicial)
     }
     //           0
-    return [ guardarValor, eliminarValor, limpiarValores, valorAlmacenado ]
+    return [guardarValor, eliminarValor, limpiarValores, valorAlmacenado]
 
 }
 

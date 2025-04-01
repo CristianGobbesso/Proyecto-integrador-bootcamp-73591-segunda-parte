@@ -6,15 +6,15 @@ import convertirAPesos from "../utils/convertirAPesos"
 
 const ProductoDetalle = () => {
   const { id } = useParams()
-  
+
   console.log(id)
 
-  const [productoDetalle, setProductoDetalle] = useState(null) 
+  const [productoDetalle, setProductoDetalle] = useState(null)
 
   useEffect(() => {
-    
+
     getOne(id)
-    
+
   }, [])
 
   const getOne = async (id) => {
@@ -31,7 +31,7 @@ const ProductoDetalle = () => {
 
       const data = await res.json()
       setProductoDetalle(data)
-      
+
     } catch (error) {
       console.error(error)
     }
@@ -40,15 +40,15 @@ const ProductoDetalle = () => {
 
   return (
     <>
-    <section className="section-detalle">
+      <section className="section-detalle">
         <header className="section-detalle__header">
           <h1>Producto detalle</h1>
-          
+
         </header>
       </section>
 
       {
-        productoDetalle ? 
+        productoDetalle ?
           (
 
             <section className='section-detalle__producto-Detalle'>
@@ -59,14 +59,14 @@ const ProductoDetalle = () => {
               <p>Detalles: {productoDetalle.detalles}</p>
               {/* convertir a pesos */}
               <p><strong>A tan solo:</strong> {convertirAPesos(productoDetalle.precio)}</p>
-            </section>  
-            
+            </section>
+
           ) :
           (
             <Spinner />
           )
       }
-      </>
+    </>
   )
 }
 

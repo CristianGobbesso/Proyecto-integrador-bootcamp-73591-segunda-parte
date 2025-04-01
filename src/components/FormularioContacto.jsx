@@ -37,14 +37,13 @@ const FormularioContacto = () => {
       validationErrors.comentarios = "Los comentarios son obligatorios";
     }
 
-    // Si hay errores, los guardamos en el estado
     if (validationErrors.email || validationErrors.apellido || validationErrors.nombre || validationErrors.comentarios) {
       setErrors(validationErrors);
       console.log("Errores en el formulario:", validationErrors)
       return;
     }
 
-    // Si no hay errores, enviamos el formulario
+  
     console.log("Formulario enviado:", formularioData);
 
     setErrors({});

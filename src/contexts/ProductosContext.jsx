@@ -32,41 +32,41 @@ const ProductosProvider = ({ children }) => {
             delete productoNuevo.id
             const options = {
                 method: 'POST',
-                headers: { 'content-type':'application/json' },
+                headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(productoNuevo)
             }
-            const prods = await peticionesHttp(url,options)
-            const nuevoEstadoProductos = [...productos,prods]
+            const prods = await peticionesHttp(url, options)
+            const nuevoEstadoProductos = [...productos, prods]
             setProductos(nuevoEstadoProductos)
-        }catch (error){
+        } catch (error) {
             console.error('[crearProductoContext]', error)
         }
     }
 
     const actualizarProductoContext = async (productoAEditar) => {
-       try {
-        const options = {
-            method: 'PUT',
-            headers: {'content-type':'application/json'},
-            body: JSON.stringify(productoAEditar)
+        try {
+            const options = {
+                method: 'PUT',
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(productoAEditar)
+            }
+
+
+            const urlActualizar = url + productoAEditar.id
+            const productoEditado = await peticionesHttp(urlActualizar, options)
+
+            const nuevoEstadoProductos = productos.map(prod => prod.id === productoEditado.id ? productoEditado : prod)
+            setProductos(nuevoEstadoProductos)
+        } catch (error) {
+            console.error('[actualizarProductoContext]', error)
         }
-
-
-        const urlActualizar = url + productoAEditar.id
-        const productoEditado = await peticionesHttp(urlActualizar,options)
-
-        const nuevoEstadoProductos = productos.map(prod => prod.id === productoEditado.id ? productoEditado : prod)
-        setProductos(nuevoEstadoProductos)
-       } catch (error) {
-        console.error('[actualizarProductoContext]', error)
-       }
     }
 
-    const eliminarProductoContext = async(id) => {
+    const eliminarProductoContext = async (id) => {
         try {
             const urlEliminacion = url + id
             const options = {
-                method:'DELETE'
+                method: 'DELETE'
             }
             const prodEliminado = await peticionesHttp(urlEliminacion, options)
 

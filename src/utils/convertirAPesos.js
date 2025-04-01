@@ -1,7 +1,7 @@
 
 const convertirAPesos = (numero) => {
 
-    const valorTransformado =  new Intl.NumberFormat('es-AR', {
+    const valorTransformado = new Intl.NumberFormat('es-AR', {
         style: 'currency',
         currency: 'ARS',
     }).format(numero)

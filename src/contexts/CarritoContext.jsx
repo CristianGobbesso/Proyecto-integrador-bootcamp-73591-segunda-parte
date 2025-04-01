@@ -1,11 +1,12 @@
 import { createContext } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-
+import { peticionesHttp } from "../helpers/peticiones-http";
 
 const CarritoContext = createContext()
 
-const CarritoProvider = ( {children} ) => {
+const CarritoProvider = ({ children }) => {
 
+    const urlCarrito = import.meta.env.VITE_BACKEND_CARRITO
     const [agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, carrito] = useLocalStorage('carrito', [])
 
     function elProductoEstaEnElCarrito(producto) {
@@ -39,18 +40,56 @@ const CarritoProvider = ( {children} ) => {
         }
     }
 
+    const eliminarProductoDelCarritoContext = (id) => {
+        console.log(id)
+        eliminarDelCarrito(id)
+    }
+    const limpiarCarritoContext = () => {
+        console.log('Limpiando carrito....')
+        limpiarCarrito()
+    }
+    const guardarCarritoBackendContext = async () => {
+
+        try {
+            console.log('Llegó al contexto la señal de guardado')
+
+            const dataCarrito = {
+                createAt: Date.now(),
+                cantidad: carrito.length,
+                carrito
+            }
+
+            const options = {
+                method: 'POST',
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(dataCarrito)
+            }
+
+            const carritoGuardado = await peticionesHttp(urlCarrito, options)
+            console.log(carritoGuardado)
+
+            limpiarCarrito()
+
+        } catch (error) {
+            console.error('[guardarCarritoBackendContext]', error)
+        }
+    }
+
     const calcularSubtotal = (producto) => producto.cantidad * producto.precio;
 
-    
+
     const calcularTotal = () => carrito.reduce((total, prod) => total + calcularSubtotal(prod), 0);
 
     const calcularTotalItems = () => carrito.reduce((total, producto) => total + producto.cantidad, 0);
 
     const data = {
         agregarProductoAlCarritoContext,
+        eliminarProductoDelCarritoContext,
+        limpiarCarritoContext,
+        guardarCarritoBackendContext,
         carrito,
         limpiarCarrito,
-        calcularTotal,  
+        calcularTotal,
         calcularSubtotal,
         calcularTotalItems
     }

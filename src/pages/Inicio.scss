@@ -1,16 +1,17 @@
 .section-cards {
     background-color: #80c8e1;
-    
+
     text-align: center;
     padding: 15px;
     border-bottom: 2px solid white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     font-size: 25px;
-    
+
     &__header {
         text-align: center;
-        
+
     }
+
     &__header p {
         text-align: start;
         font-size: large;

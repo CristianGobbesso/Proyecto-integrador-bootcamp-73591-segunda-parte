@@ -22,7 +22,7 @@ const Nosotros = () => {
         </article>
 
         <figure className="section-about-us__img">
-          <img 
+          <img
             src="../../imgs/local-nosotros.webp"
             alt="Sucursal de CODEX en Rosario con productos exhibidos y clientes explorando."
           />
@@ -31,7 +31,7 @@ const Nosotros = () => {
 
         <article>
           <p>
-            Creemos que la tecnología es más que un conjunto de dispositivos, es una herramienta que transforma vidas. 
+            Creemos que la tecnología es más que un conjunto de dispositivos, es una herramienta que transforma vidas.
             Nos dedicamos a ofrecer lo mejor en innovación, calidad y servicio.
           </p>
           <p>

@@ -7,21 +7,21 @@ import './Alta.scss'
 const Alta = () => {
 
   useTitulo('Alta')
-  
+
   return (
-  
+
     <>
-    <section className="section-alta">
+      <section className="section-alta">
         <header className="section-alta__header">
-    <h1>Formulario de Alta de Productos</h1>
-          
+          <h1>Formulario de Alta de Productos</h1>
+
         </header>
       </section>
-    
-    <Formulario />
-    <Tabla />
-    
-    
+
+      <Formulario />
+      <Tabla />
+
+
     </>
   )
 }

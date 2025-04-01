@@ -15,30 +15,31 @@ const Rutas = () => {
         [
             {
                 path: '/',
-                element: <Inicio/>
+                element: <Inicio />
             },
             {
                 path: '/alta',
-                element: <Alta/>
+                element: <Alta />
             },
-            {   path: '/alta/detalle/:id',
-                element: <ProductoDetalle /> 
+            {
+                path: '/alta/detalle/:id',
+                element: <ProductoDetalle />
             },
             {
                 path: '/nosotros',
-                element: <Nosotros/>
+                element: <Nosotros />
             },
             {
                 path: '/contacto',
-                element: <Contacto/>
+                element: <Contacto />
             },
             {
                 path: '/carrito',
-                element: <Carrito/>
+                element: <Carrito />
             },
             {
                 path: '*',
-                element: <NoEncontrado/>
+                element: <NoEncontrado />
             }
 
         ]
@@ -47,7 +48,7 @@ const Rutas = () => {
 
 
 
-  return hookRutas
+    return hookRutas
 }
 
 export default Rutas

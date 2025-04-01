@@ -47,6 +47,7 @@ body {
         text-align: start;
         margin-bottom: 20px;
     }
+
     &__nosotros p {
         margin-bottom: 10px;
         font-size: 25px;
@@ -61,7 +62,7 @@ body {
     padding: 40px;
     background-color: #80c8e1;
     color: white;
-    
+
 
     h2 {
         margin-bottom: 20px;
@@ -117,11 +118,12 @@ body {
         margin-top: 10px;
         font-size: 16px;
     }
-    
+
 }
+
 .brackets {
     color: rgb(210, 30, 210);
-  }
+}
 
 @media screen and (min-width: 992px) {
     .section-about-us__nosotros {
@@ -147,14 +149,16 @@ body {
     }
 
     .testimonial {
-        flex: 1 1 30%; /* Ocupa un 30% del ancho disponible */
+        flex: 1 1 30%;
+        /* Ocupa un 30% del ancho disponible */
         min-width: 250px;
     }
 }
 
 @media screen and (max-width: 991px) {
     .section-about-us__img {
-        order: 2; /* Mueve la imagen al final del texto */
+        order: 2;
+        /* Mueve la imagen al final del texto */
         margin-top: 20px;
     }
 }

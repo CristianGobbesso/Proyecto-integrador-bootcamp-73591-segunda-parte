@@ -1,6 +1,6 @@
 
 const NoEncontrado = () => {
-  
+
   return (
     <div>NoEncontrado</div>
   )

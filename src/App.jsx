@@ -6,7 +6,7 @@ import Cabecera from "./components/Cabecera"
 const App = () => {
   return (
     <BrowserRouter>
-    
+
       <Cabecera />
 
       <Rutas />

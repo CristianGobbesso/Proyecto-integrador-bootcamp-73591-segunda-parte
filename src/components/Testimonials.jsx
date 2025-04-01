@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Testimonials.scss"; // Importa los estilos
+import "./Testimonials.scss";
 
 const testimonialsData = [
   { text: "“Excelente atención y productos de primera calidad. Muy recomendable.”", author: "Juan Pérez" },
@@ -15,7 +15,7 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTestimonials((prevTestimonials) => [...prevTestimonials].sort(() => Math.random() - 0.5));
-    }, 20000); // Cambia cada 20 segundos
+    }, 20000);
 
     return () => clearInterval(interval);
   }, []);

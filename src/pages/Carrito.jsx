@@ -7,12 +7,12 @@ const Carrito = () => {
 
   return (
     <>
-    <section className="section-carrito">
+      <section className="section-carrito">
         <header className="section-carrito__header">
-      <h1>Productos en el carrito</h1>
+          <h1>Productos en el carrito</h1>
         </header>
-        </section>
-      
+      </section>
+
       <ListadoCarrito />
     </>
   )

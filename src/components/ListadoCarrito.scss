@@ -12,25 +12,26 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   padding: 0 30px;
 }
 
 .table-wrapper table.tabla-carrito {
   border-collapse: collapse;
   width: 100%;
-  min-width: 700px; 
+  min-width: 700px;
   margin: 1rem auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
   word-wrap: break-word;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 th {
@@ -62,10 +63,10 @@ td.total-valor {
   font-size: 1.3rem;
   font-weight: bold;
   color: #000;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
-  max-width: 150px; 
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 
 
@@ -82,10 +83,10 @@ td.total-items-valor {
   font-size: 1.3rem;
   font-weight: bold;
   color: #000;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
-  max-width: 150px; 
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 
 
@@ -131,7 +132,8 @@ tfoot tr.total-final-row td {
     table-layout: fixed;
   }
 
-  th, td {
+  th,
+  td {
     display: table-cell;
     width: auto;
     padding: 12px 5px;
@@ -146,7 +148,8 @@ tfoot tr.total-final-row td {
     table-layout: auto;
   }
 
-  table.tabla-carrito th, table.tabla-carrito td {
+  table.tabla-carrito th,
+  table.tabla-carrito td {
     padding: 15px;
   }
 
@@ -172,18 +175,18 @@ button.btn-comprar {
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #14ef6b; 
-    transform: translateY(-2px); 
+    background-color: #14ef6b;
+    transform: translateY(-2px);
   }
 
   &:focus {
-    outline: none; 
+    outline: none;
   }
 }
 
 /* Botón Vaciar Carrito */
 button.btn-vaciar-carrito {
-  background-color: #f3c848; 
+  background-color: #f3c848;
   color: black;
   font-weight: bolder;
   padding: 10px 10px;
@@ -195,7 +198,7 @@ button.btn-vaciar-carrito {
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #f3b818; 
+    background-color: #f3b818;
     transform: translateY(-2px);
   }
 
@@ -207,7 +210,7 @@ button.btn-vaciar-carrito {
 /* Botón Eliminar */
 
 button.btn-eliminar {
-  background-color: #ec2812; 
+  background-color: #ec2812;
   color: black;
   font-weight: bolder;
   padding: 10px 20px;
@@ -218,7 +221,7 @@ button.btn-eliminar {
   transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-color: #c0392b; 
+    background-color: #c0392b;
     transform: translateY(-2px);
   }
 

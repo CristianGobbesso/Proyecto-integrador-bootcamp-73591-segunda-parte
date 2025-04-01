@@ -3,9 +3,9 @@ import { useEffect } from "react"
 const useTitulo = (textoTitulo = 'Sin Titulo') => {
   return (
     useEffect(() => {
-        document.title = `Codex - ${textoTitulo}`
+      document.title = `Codex - ${textoTitulo}`
     }, [])
-    
+
   )
 }
 

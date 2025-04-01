@@ -8,7 +8,7 @@
     align-items: self-start;
     width: 100%;
     background-color: #061523;
-    
+
     @media screen and (min-width: 992px) {
         flex-direction: column;
     }
@@ -16,15 +16,15 @@
 
 #menu {
     display: none;
-    
-    
+
+
     &:checked+.nav-bar {
         display: block;
     }
-    
+
     &:checked~.search-bar .menu-toogle .menu-toogle__label {
         background-color: #267b84;
-        
+
     }
 }
 
@@ -38,7 +38,7 @@
     position: relative;
     cursor: pointer;
     margin-top: 10px;
-    
+
 
     &__label {
         display: block;
@@ -46,7 +46,7 @@
         padding: 10px;
         margin: 20px;
         cursor: pointer;
-        
+
     }
 
     &__top-bread,
