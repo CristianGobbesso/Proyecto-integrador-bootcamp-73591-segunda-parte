@@ -1,10 +1,12 @@
 import './Formulario.scss'
+import './DragDrop.scss'
 import { useContext, useEffect, useState } from "react"
 import ProductosContext from "../../contexts/ProductosContext"
+import DragDrop from './DragDrop'
 
 const Formulario = () => {
 
-    const {crearProductosContext,
+    const {crearProductoContext,
          productoAEditar, 
          setProductoAEditar, 
          actualizarProductoContext
@@ -29,15 +31,27 @@ const Formulario = () => {
 
     const [form, setForm] = useState(formInicial)
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        if(form.id === null){
+    
+    
+     /* Creamos 2 estados para gestionar el drag and drop */
+     const placeHolderImagen = 'http://localhost:8080/uploads/placeholderimagen.webp'
+     const [foto, setFoto] = useState({ foto: placeHolderImagen })
+     const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen)
+ 
+     const handleSubmit = (e) => {
+         e.preventDefault()
+ 
+         if (form.id === null) {
             
-            crearProductosContext(form)
-        }else{
-            actualizarProductoContext(form)
-        }
-    }
+             const productoNuevoConImagen = {...form, ...foto}
+             
+             crearProductoContext(productoNuevoConImagen)
+         } else {
+             const productoNuevoConImagen = {...form, ...foto}
+             actualizarProductoContext(productoNuevoConImagen)
+         }
+         handleReset();
+     }
 
     const handleChange = (e) => {
         const {type, name, checked, value} = e.target 
@@ -54,6 +68,8 @@ const Formulario = () => {
     const handleReset = () => {
         setForm(formInicial)
         setProductoAEditar(null)
+        setFoto({ foto: placeHolderImagen }) 
+        setSrcImagenBack(placeHolderImagen)
     }
 
 
@@ -121,14 +137,11 @@ const Formulario = () => {
                     onChange={handleChange} />
                 </div>
                 <div>
-                    <label htmlFor="lbl-foto">Foto</label>
-                    <input
-                    type="text"
-                    id="lbl-foto"
-                    name="foto"
-                    value={form.foto}
-                    onChange={handleChange} />
+                    <DragDrop setFoto={setFoto} 
+                    srcImagenBack={srcImagenBack} 
+                    setSrcImagenBack={setSrcImagenBack}  />
                 </div>
+                
                 <div>
                     <label htmlFor="lbl-envio">Envío</label>
                     <input
