@@ -27,7 +27,7 @@ const ProductosProvider = ({ children }) => {
         }
     }
 
-    const crearProductosContext = async (productoNuevo) => {
+    const crearProductoContext = async (productoNuevo) => {
         try {
             delete productoNuevo.id
             const options = {
@@ -79,7 +79,7 @@ const ProductosProvider = ({ children }) => {
 
     const data = {
         productos,
-        crearProductosContext,
+        crearProductoContext,
         actualizarProductoContext,
         eliminarProductoContext,
         productoAEditar,
