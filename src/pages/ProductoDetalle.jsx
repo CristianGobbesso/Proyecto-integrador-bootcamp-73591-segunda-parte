@@ -8,6 +8,7 @@ const ProductoDetalle = () => {
   const { id } = useParams()
 
   console.log(id)
+  
 
   const [productoDetalle, setProductoDetalle] = useState(null)
 
@@ -16,7 +17,7 @@ const ProductoDetalle = () => {
     getOne(id)
 
   }, [])
-
+ 
   const getOne = async (id) => {
 
 
@@ -53,7 +54,9 @@ const ProductoDetalle = () => {
 
             <section className='section-detalle__producto-Detalle'>
               <h2> {productoDetalle.nombre}</h2>
+              {console.log('Foto del producto:', productoDetalle.foto)}
               <img src={`/${productoDetalle.foto}`} alt={productoDetalle.nombre} />
+              
               <p>Marca: {productoDetalle.marca}</p>
               <p>Categoria: {productoDetalle.categoria}</p>
               <p>Detalles: {productoDetalle.detalles}</p>
