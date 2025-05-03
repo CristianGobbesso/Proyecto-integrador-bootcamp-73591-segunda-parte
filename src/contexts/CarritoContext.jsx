@@ -54,7 +54,7 @@ const CarritoProvider = ({ children }) => {
             console.log('Llegó al contexto la señal de guardado')
 
             const dataCarrito = {
-                createAt: Date.now(),
+                
                 cantidad: carrito.length,
                 carrito
             }
