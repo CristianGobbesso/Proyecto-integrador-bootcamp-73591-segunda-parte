@@ -31,6 +31,7 @@ const ProductoDetalle = () => {
       }
 
       const data = await res.json()
+      console.log('Producto recibido:', data)
       setProductoDetalle(data)
 
     } catch (error) {

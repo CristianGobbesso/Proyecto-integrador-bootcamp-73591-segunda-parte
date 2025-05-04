@@ -4,7 +4,7 @@
       "nombre": "IPhone 15 Pro Max",
       "foto": "imgs/apple-iphone-11-pro-max.webp",
       "detalles": "Potente, elegante, cámara avanzada, pantalla ProMotion, diseño premium.",
-      "precio": 2999990.00,
+      "precio": 2999990,
       "stock": "4444",
       "marca": "Apple",
       "categoria": "Celulares y Smartphones",
@@ -15,7 +15,7 @@
       "nombre": "IPhone 12",
       "foto": "imgs/apple-iphone-12.webp",
       "detalles": "Rápido, eficiente, pantalla OLED, cámara dual, diseño resistente.",
-      "precio": 1200000.00,
+      "precio": 1200000,
       "stock": "4",
       "marca": "Apple",
       "categoria": "Celulares y Smartphones",
@@ -26,7 +26,7 @@
       "nombre": "Sony WH-CH520",
       "foto": "imgs/auriculares-sony.webp",
       "detalles": "Sonido envolvente, cancelación de ruido, batería duradera.",
-      "precio": 80000.00,
+      "precio": 80000,
       "stock": 4,
       "marca": "Sony",
       "categoria": "Auriculares y Audio",
@@ -37,7 +37,7 @@
       "nombre": "Camara Canon",
       "detalles": "Alta resolución, sensor avanzado, enfoque rápido, video 4K.",
       "foto": "imgs/camara-canon.webp",
-      "precio": 500000.00,
+      "precio": 500000,
       "stock": 7,
       "marca": "Canon",
       "categoria": " Cámaras Fotográficas",
@@ -48,7 +48,7 @@
       "nombre": "Samsung S22",
       "detalles": " Pantalla AMOLED, potente procesador, cámara avanzada, rendimiento óptimo.",
       "foto": "imgs/celular-samsung.webp",
-      "precio": 1500000.00,
+      "precio": 1500000,
       "stock": 4,
       "marca": "Samsung",
       "categoria": "Celulares y Smartphones",
@@ -58,7 +58,7 @@
     {
       "id": "6",
       "nombre": "Chromecast 4G",
-      "precio": 50000.00,
+      "precio": 50000,
       "stock": 4,
       "marca": "Google",
       "categoria": "Dispositivos de Streaming",
@@ -69,24 +69,13 @@
     {
       "id": "7",
       "nombre": "DJI Mavic 2 Pro",
-      "precio": 1200000.00,
+      "precio": 1200000,
       "stock": 2,
       "marca": "DJI",
       "categoria": "Drones",
       "detalles": "Cámara Hasselblad, grabación 4K, vuelo estable, control inteligente",
       "foto": "imgs/dji-mavic-2-pro.webp",
       "envio": false
-    },
-    {
-      "id": "8",
-      "nombre": "Drone DJI Max",
-      "precio": 800000.00,
-      "stock": "2",
-      "marca": "DJI",
-      "categoria": "Drones",
-      "detalles": "Resistente, grabación 360°, autonomía prolongada, estabilización avanzada.",
-      "foto": "imgs/drone-dji.webp",
-      "envio": true
     }
   ],
   "carrito": [
@@ -279,6 +268,72 @@
           "detalles": "Piola. 8k",
           "foto": "imgs/drone-dji.webp",
           "envio": true,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": "e090",
+      "cantidad": 5,
+      "carrito": [
+        {
+          "nombre": "IPhone 15 Pro Max",
+          "foto": "imgs/apple-iphone-11-pro-max.webp",
+          "detalles": "Potente, elegante, cámara avanzada, pantalla ProMotion, diseño premium.",
+          "precio": 2999990,
+          "stock": "4444",
+          "marca": "Apple",
+          "categoria": "Celulares y Smartphones",
+          "id": "1",
+          "envio": false,
+          "cantidad": 1
+        },
+        {
+          "nombre": "IPhone 12",
+          "foto": "imgs/apple-iphone-12.webp",
+          "detalles": "Rápido, eficiente, pantalla OLED, cámara dual, diseño resistente.",
+          "precio": 1200000,
+          "stock": "4",
+          "marca": "Apple",
+          "categoria": "Celulares y Smartphones",
+          "id": "2",
+          "envio": true,
+          "cantidad": 1
+        },
+        {
+          "nombre": "Sony WH-CH520",
+          "foto": "imgs/auriculares-sony.webp",
+          "detalles": "Sonido envolvente, cancelación de ruido, batería duradera.",
+          "precio": 80000,
+          "stock": 4,
+          "marca": "Sony",
+          "categoria": "Auriculares y Audio",
+          "id": "3",
+          "envio": false,
+          "cantidad": 2
+        },
+        {
+          "id": "6",
+          "nombre": "Chromecast 4G",
+          "precio": 50000,
+          "stock": 4,
+          "marca": "Google",
+          "categoria": "Dispositivos de Streaming",
+          "detalles": "Streaming fluido, resolución 4K, control por voz, compacto.",
+          "foto": "imgs/chromecast-google.webp",
+          "envio": true,
+          "cantidad": 1
+        },
+        {
+          "id": "7",
+          "nombre": "DJI Mavic 2 Pro",
+          "precio": 1200000,
+          "stock": 2,
+          "marca": "DJI",
+          "categoria": "Drones",
+          "detalles": "Cámara Hasselblad, grabación 4K, vuelo estable, control inteligente",
+          "foto": "imgs/dji-mavic-2-pro.webp",
+          "envio": false,
           "cantidad": 1
         }
       ]
