@@ -55,7 +55,7 @@ const ProductoDetalle = () => {
             <section className='section-detalle__producto-Detalle'>
               <h2> {productoDetalle.nombre}</h2>
               {console.log('Foto del producto:', productoDetalle.foto)}
-              <img src={`/${productoDetalle.foto}`} alt={productoDetalle.nombre} />
+              <img src={`${productoDetalle.foto}`} alt={productoDetalle.nombre} />
               
               <p>Marca: {productoDetalle.marca}</p>
               <p>Categoria: {productoDetalle.categoria}</p>
