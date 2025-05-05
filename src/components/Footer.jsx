@@ -11,7 +11,7 @@ const Footer = () => {
     <a href="https://www.instagram.com/" target="_blank"><img src="./icons/instagram.svg"
         alt="icono de la red social instagram" /></a>
   </div>
-  <div className="footer__right"><a href="https://www.linkedin.com/" target="_blank">Desarrollado por Cristian
+  <div className="footer__right"><a href="https://ar.linkedin.com/in/cristian-gobbesso-7833591b2" target="_blank">Desarrollado por Cristian
       Gobbesso.</a></div>
 </footer>
   )
